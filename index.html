@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelas XII 4</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0078ff, #00c3ff);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeInDown 1s ease;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+    }
+
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00c3ff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeInUp 1s ease;
+    }
+
+    h2 {
+      color: #0078ff;
+      margin-bottom: 20px;
+      border-left: 5px solid #00c3ff;
+      padding-left: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    table th {
+      background: #0078ff;
+      color: white;
+    }
+
+    table tr:nth-child(even) {
+      background: #f2f9ff;
+    }
+
+    .foto-kelas {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .foto-kelas img {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      section {
+        margin: 20px;
+        padding: 25px;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="foto-profil.jpg" alt="Foto Profil Kelas">
+    <h1>Kelas XII 4</h1>
+    <p>SMAN 1 SUKAHAJI | Tahun Ajaran 2025/2026</p>
+  </header>
+
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#jadwal">Jadwal Pelajaran</a>
+    <a href="#piket">Jadwal Piket</a>
+    <a href="#galeri">Foto Kelas</a>
+  </nav>
+
+  <section id="profil">
+    <h2>Profil Kelas</h2>
+    <p>Kelas XII-4 adalah kelompok siswa yang suka kompak pada suatu acara dan disini pada belajar untuk masuk universitas impiannya dan ada juga yang mau kerja di PT besar.</p>
+  </section>
+
+  <section id="jadwal">
+    <h2>Jadwal Pelajaran</h2>
+    <table>
+      <tr>
+        <th>Hari</th>
+        <th>Mata Pelajaran</th>
+        <th>Waktu</th>
+      </tr>
+      <tr>
+        <td>Senin</td>
+        <td>Informatika, Seni budaya, bahasa Indonesia, Pai</td>
+        <td>06.30 - 15.00</td>
+      </tr>
+      <tr>
+        <td>Selasa</td>
+        <td>Informatika, Pendidikan Pancasila,Kimia,Bahas inggris</td>
+        <td>06.30 - 15.00</td>
+      </tr>
+      <tr>
+        <td>Rabu</td>
+        <td>Bahasa Indonesia,Bahasa Sunda,Pjok,Kimia</td>
+        <td>06.30 - 15.00</td>
+      </tr>
+      <tr>
+        <td>Kamis</td>
+        <td>Matematika,Biologi,B.indonesia lanjut,Sejarah</td>
+        <td>06.30 - 15.00</td>
+      </tr>
+      <tr>
+        <td>Jumat</td>
+        <td>Bp/BK,Biologi,B indonesia lanjut,Matematika</td>
+        <td>06.30 - 14.00</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="piket">
+    <h2>Jadwal Piket</h2>
+    <table>
+      <tr>
+        <th>Hari</th>
+        <th>Nama Siswa</th>
+      </tr>
+      <tr>
+        <td>Senin</td>
+        <td>Syepia, Reva, Vinka, Raka, Panji, Rizki</td>
+      </tr>
+      <tr>
+        <td>Selasa</td>
+        <td>Sri Febryanti, Erni, Nurfa, Keitara, Siti Nurfa, Fazri, Reyhan</td>
+      </tr>
+      <tr>
+        <td>Rabu</td>
+        <td>Aidila, Risa, Encas, Putri, Febryan, Fauzan, Arya</td>
+      </tr>
+      <tr>
+        <td>Kamis</td>
+        <td>Keyla, Qeisya, Inaya, Tiara, Naychila, Adi, Firman</td>
+      </tr>
+      <tr>
+        <td>Jumat</td>
+        <td>Ayu, Nadia, Helvia, Ade Sela, Adrian, Niko, Pebri</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="galeri">
+    <h2>Foto Kelas Bareng Guru</h2>
+    <div class="foto-kelas">
+      <img src="foto-kelas.jpg" alt="Foto Kelas XII-4">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 developer kelas XII 4</p>
+  </footer>
+
+</body>
+</html>
